@@ -332,7 +332,8 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                             self.img_files]
 
         # Check cache
-        cache_path = str(Path(self.label_files[0]).parent) + '.cache'  # cached labels
+        cache_path = str(Path('/home/Seabirds_Master_Thesis/').parent) + '.cache'  # cached labels
+        
         if os.path.isfile(cache_path):
             cache = torch.load(cache_path)  # load
             if cache['hash'] != get_hash(self.label_files + self.img_files):  # dataset changed
