@@ -169,3 +169,5 @@ if __name__ == '__main__':
                 strip_optimizer(opt.weights)
         else:
             detect()
+
+# python detect.py --weights weights/best_all_yolov4-pp6.pt --source /home/tracking_branch/Seabird_Master_Thesis/data/tracking_vid/Farallon3_20200517_105645_trim.avi --img-size 1280 --save-txt
